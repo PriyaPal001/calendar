@@ -127,7 +127,7 @@
 
 {#if isOpenCalendar}
   <div
-    class="fixed z-40 left-0 top-0 w-full h-full overflow-auto bg-black bg-opacity-40"
+    class="fixed z-40 left-0 top-0 w-full  h-full overflow-auto bg-black bg-opacity-40"
     bind:this={elModal}
     on:click={handleClickModal}
   >
@@ -237,6 +237,9 @@
   type="text"
   bind:value={inputTxt}
   class={customclass}
+  style="padding:10px ;
+  text-align: center;
+  border-radius: 5px;"
   on:click={() => {
     isOpenCalendar = true
   }}
